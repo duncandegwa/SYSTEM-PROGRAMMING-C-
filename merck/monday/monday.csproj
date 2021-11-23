@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40F9614F-445C-42BA-AE0D-CE4593E0D5A5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>monday</RootNamespace>
+    <AssemblyName>monday</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="boot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="boot.Designer.cs">
+      <DependentUpon>boot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="create.Designer.cs">
+      <DependentUpon>create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete.Designer.cs">
+      <DependentUpon>delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="drive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="drive.Designer.cs">
+      <DependentUpon>drive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="internet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="internet.Designer.cs">
+      <DependentUpon>internet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementObjectCollection.cs" />
+    <Compile Include="ManagementObjectCollection_2.cs" />
+    <Compile Include="ManagementObjectSearcher.cs" />
+    <Compile Include="ManagementObjectSearcher_2.cs" />
+    <Compile Include="open.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="open.Designer.cs">
+      <DependentUpon>open.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Populate.cs" />
+    <Compile Include="proc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="proc.Designer.cs">
+      <DependentUpon>proc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="proces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="proces.Designer.cs">
+      <DependentUpon>proces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="socket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="socket.Designer.cs">
+      <DependentUpon>socket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="system.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="system.Designer.cs">
+      <DependentUpon>system.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usb.Designer.cs">
+      <DependentUpon>usb.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="boot.resx">
+      <DependentUpon>boot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="create.resx">
+      <DependentUpon>create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete.resx">
+      <DependentUpon>delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="drive.resx">
+      <DependentUpon>drive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="internet.resx">
+      <DependentUpon>internet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="open.resx">
+      <DependentUpon>open.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="proc.resx">
+      <DependentUpon>proc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="proces.resx">
+      <DependentUpon>proces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="socket.resx">
+      <DependentUpon>socket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="system.resx">
+      <DependentUpon>system.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usb.resx">
+      <DependentUpon>usb.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
